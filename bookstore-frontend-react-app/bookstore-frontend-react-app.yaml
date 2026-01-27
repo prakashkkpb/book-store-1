@@ -5,7 +5,7 @@ metadata:
   labels:
     app: bookstore-frontend-react-app
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: bookstore-frontend-react-app
@@ -28,10 +28,10 @@ metadata:
   labels:
     app: bookstore-frontend-react-app
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: bookstore-frontend-react-app
   ports:
   - protocol: TCP
-    port: 3000
+    port: 80
     targetPort: 3000
