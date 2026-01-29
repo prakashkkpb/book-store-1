@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: bookstore-catalog-service
-        image: rajureddy98/bookstore-catalog-service:2.0
+        image: sunildevops1/bookstore-catalog-service:11
         imagePullPolicy: Always
         ports:
           - containerPort: 6001
